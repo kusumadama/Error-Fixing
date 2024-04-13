@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            color: #333; /* Improved contrast */
         }
 
         /* Header styles */
@@ -101,6 +102,7 @@
             height: 20px;
             background-color: #ccc;
             border-radius: 20px;
+            font-size: 0; /* Hide the label text */
         }
 
         .toggle-container label:after {
@@ -261,14 +263,14 @@
         </nav>
         <div class="toggle-container">
             <input type="checkbox" id="toggle" />
-            <label for="toggle"></label>
+            <label for="toggle" aria-hidden="true"></label>
         </div>
     </header>
     <main>
         <section class="hero">
             <h2>Welcome to Movie Review Website</h2>
             <p>Discover the latest movie reviews, trailers, and more!</p>
-            <input type="text" class="search-bar" id="search-bar" name="search" aria-label="Search for movie reviews" placeholder="Search for movie reviews">
+            <input type="text" class="search-bar" id="search-bar" aria-label="Search for movie reviews" placeholder="Search for movie reviews">
         </section>
 
         <section class="movie-review">
